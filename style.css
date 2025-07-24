@@ -37,11 +37,10 @@ header {
 
 .nav-links a {
   text-decoration: none;
-
   font-weight: 500;
-  transition: color 0.3s ease;
   display: flex;
   align-items: center;
+  color: black;
 }
 
 .icon {
@@ -52,7 +51,7 @@ header {
 }
 
 /* Banner Section */
-/* Banner Section */
+
 .b-p {
   display: flex;
   align-items: center;
@@ -91,6 +90,8 @@ header {
 
 .b-img img {
   width: 800px;
+  border-style: dashed;
+  border-color: #e6e6e6;
 }
 
 
@@ -142,7 +143,8 @@ header {
 
 .plant-card img {
   width: 100%;
-  border: 1px dashed #ccc;
+  border: 1px dashed ;
+  border-color: #cacaca;
   border-radius: 6px;
   margin-bottom: 10px;
 }
@@ -170,51 +172,353 @@ header {
   font-weight: 600;
   font-size: 14px;
   font-family: 'Inter', sans-serif;
-  transition: background 0.3s ease;
+
 }
 
 .add-btn:hover {
   background-color: #cc4c06;
 }
+/* trust loves section */
+.flower-section {
+  padding: 40px 20px;
+  background-color: #f9faff;
+}
+
+.flower-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.flower-img-wrapper {
+  position: relative;
+  flex: 1;
+  max-width: 500px;
+}
+
+.flower-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -50px;         /* Higher above the image */
+  right: -40px;       /* Push more to the outside */
+  width: 120px;       /* Larger size */
+  z-index: 2;
+}
+
+.flower-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.flower-text h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.flower-text p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  padding-left: 20px;
+  position: relative;
+}
+
+.flower-text p::before {
+  content: "•";
+  color: #333;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+/* latest section */
+/* === Base Section Styling === */
+.deals-section {
+  background-color: #f4f8ff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.deals-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.deals-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.deals-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.deals-header .highlight {
+  color: #ff6600;
+}
+
+.deals-header p {
+  max-width: 600px;
+  margin: 10px auto 0;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* === Deals Grid === */
+.deals-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* === Left Side Small Cards === */
+.left-deals {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+/* === Deal Cards General === */
+.deal-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* === Text Inside Cards === */
+.deal-text {
+  text-align: center;
+  padding: 10px;
+}
+
+.deal-text h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.deal-text a {
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* === Small and Large Card Sizes === */
+.small {
+  height: 160px;
+}
+
+.large {
+  flex: 2;
+  min-height: 360px;
+}
+
+
+.card1 {
+  background-image: url('./assets/deal-bloom.png'); 
+  
+}
+
+
+.card2 {
+  background-image: url('./assets/deal-ana.png'); 
+}
+
+
+.card3 {
+  background-image: url('./assets/deal-zabo.png'); 
+}
+/* join subscription section*/
+.subscription-section {
+  height: 100vh;
+  background-image: url('./assets/news-letter-bg.png');
+  height: 533px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.overlay {
+  
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.overlay h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.subscription-form {
+  display: flex;
+  width: 100%;
+}
+
+.subscription-form input[type="email"] {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+}
+
+.subscription-form button {
+  padding: 15px 25px;
+  background-color: #f26522;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscription-form button:hover {
+  background-color: #d35400;
+}
+/* footer section*/
+.footer {
+  background-color: #f8f9fb;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+}
+
+.footer-left .logo {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  flex: 2 1 400px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f26522;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: start;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
 
 
 
 /* Responsive codes */
+
+
 /* banner header */
 @media (max-width: 768px) {
-  /* Hide all navbar links */
+
   .navbar a:not(.cart-link) {
     display: none;
   }
 
-  /* Ensure cart is visible */
+
   .cart-link {
     display: flex;
     align-items: center;
     gap: 5px;
   }
 
-  /* Stack banner content vertically and center align */
+
   .b-p {
     flex-direction: column-reverse;
     align-items: center;
-    text-align: center;
+
   }
 
-  /* Responsive image sizing */
   .b-img img {
     width: 100%;
     max-width: 350px;
   }
 
-  /* Adjust text section width */
   .b-t {
     width: 100%;
     padding: 0 20px;
   }
 }
 
-/* our plant */
+/* our plant section */
 
 
 @media (max-width: 768px) {
@@ -223,4 +527,69 @@ header {
   }
 }
 
+/* trust loves section */
+@media (max-width: 768px) {
+  .flower-container {
+    flex-direction: column;
+
+  }
+
+  .trusted-badge {
+    display: none;
+  }
+
+  .flower-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .flower-text {
+    padding: 0 10px;
+  }
+}
+
+
+/* latest deal */
+@media (max-width: 768px) {
+  .deals-cards {
+    flex-direction: column;
+  }
+
+  .left-deals {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .deal-card.large {
+    height: 200px;
+  }
+
+  .deal-text h2 {
+    font-size: 1.1rem;
+  }
+}
+
+/* join section*/
+@media (max-width: 600px) {
+  .subscription-form input[type="email"],
+  .subscription-form button {
+    margin: 5px 0;
+  }
+}
+/* footer section code */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+
+  }
+
+  .footer-links {
+    flex-direction: column;
+
+  }
+
+  .footer-social {
+
+    margin-top: 20px;
+  }
+}
 
