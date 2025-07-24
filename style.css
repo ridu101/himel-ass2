@@ -208,9 +208,9 @@ header {
 
 .trusted-badge {
   position: absolute;
-  top: -50px;         /* Higher above the image */
-  right: -40px;       /* Push more to the outside */
-  width: 120px;       /* Larger size */
+  top: -50px;        
+  right: -40px;       
+  width: 120px;     
   z-index: 2;
 }
 
@@ -240,7 +240,8 @@ header {
   top: 2px;
 }
 /* latest section */
-/* === Base Section Styling === */
+
+/*  Base Section Styling */
 .deals-section {
   background-color: #f4f8ff;
   padding: 60px 20px;
@@ -274,14 +275,14 @@ header {
   line-height: 1.6;
 }
 
-/* === Deals Grid === */
+/* Deals Grid  */
 .deals-cards {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-/* === Left Side Small Cards === */
+/* Left Side Small Cards */
 .left-deals {
   display: flex;
   flex-direction: column;
@@ -290,7 +291,7 @@ header {
   min-width: 250px;
 }
 
-/* === Deal Cards General === */
+/*  Deal Cards General  */
 .deal-card {
   background-size: cover;
   background-position: center;
@@ -305,7 +306,7 @@ header {
   padding: 20px;
 }
 
-/* === Text Inside Cards === */
+/*  Text Inside Cards */
 .deal-text {
   text-align: center;
   padding: 10px;
@@ -325,7 +326,7 @@ header {
   font-weight: bold;
 }
 
-/* === Small and Large Card Sizes === */
+/* Small and Large Card Sizes */
 .small {
   height: 160px;
 }
@@ -350,7 +351,10 @@ header {
 .card3 {
   background-image: url('./assets/deal-zabo.png'); 
 }
+
+
 /* join subscription section*/
+
 .subscription-section {
   height: 100vh;
   background-image: url('./assets/news-letter-bg.png');
@@ -407,7 +411,10 @@ header {
 .subscription-form button:hover {
   background-color: #d35400;
 }
+
+
 /* footer section*/
+
 .footer {
   background-color: #f8f9fb;
   padding: 40px 20px;
@@ -477,13 +484,10 @@ header {
   cursor: pointer;
 }
 
-.footer-social img:hover {
-  transform: scale(1.1);
-}
 
 
 
-/* Responsive codes */
+/*=============================================== Responsive codes============================== */
 
 
 /* banner header */
@@ -569,7 +573,7 @@ header {
 }
 
 /* join section*/
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .subscription-form input[type="email"],
   .subscription-form button {
     margin: 5px 0;
